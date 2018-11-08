@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alkagi.client.FXMLClientGameController">
+   <children>
+      <HBox prefHeight="32.0" prefWidth="200.0" spacing="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="mButtonConnect" mnemonicParsing="false" onAction="#onClickConnect" prefHeight="32.0" text="Connect">
+               <padding>
+                  <Insets left="16.0" right="16.0" />
+               </padding>
+            </Button>
+            <Button fx:id="mButtonStart" disable="true" mnemonicParsing="false" onAction="#onClickStart" prefHeight="32.0" text="Start">
+               <padding>
+                  <Insets left="16.0" right="16.0" />
+               </padding>
+            </Button>
+            <Button fx:id="mButtonGiveUp" disable="true" mnemonicParsing="false" onAction="#onClickGiveUp" prefHeight="32.0" text="Give up">
+               <padding>
+                  <Insets left="16.0" right="16.0" />
+               </padding>
+            </Button>
+            <Label fx:id="mLabelStatus" prefHeight="32.0" text="Status" />
+         </children>
+      </HBox>
+      <Canvas fx:id="mCanvas" height="200.0" width="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0" />
+   </children>
+</AnchorPane>
